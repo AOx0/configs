@@ -1,0 +1,18 @@
+
+[eww.files]
+eww = "~/.config/eww"
+
+[funs.files]
+"funs/a.fish" = "~/.config/fish/functions/a.fish"
+"funs/toggle_gamemode.fish" = "~/.config/fish/functions/toggle_gamemode.fish"
+"funs/connect.fish" = "~/.config/fish/functions/connect.fish"
+"funs/init_br.fish" = "~/.config/fish/functions/init_br.fish"
+"funs/sinit_br.fish" = "~/.config/fish/functions/sinit_br.fish"
+"funs/fpath.fish" = "~/.config/fish/functions/fpath.fish"
+
+[hypr.files]
+hypr = { target = "~/.config/hypr", type = "symbolic" }
+
+[helix.files]
+"helix/config.toml" = "~/.config/helix/config.toml"
+"helix/languages.toml" = "~/.config/helix/languages.toml"

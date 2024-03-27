@@ -1,0 +1,22 @@
+* {
+  all: unset;
+  /* Unsets everything so you can style everything from scratch */
+}
+
+.date,
+#date {
+  font-family: "JetBrainsMono NF", monospace;
+  font-size: 3em;
+  font-weight: bold;
+  color: black;
+  background-color: transparent;
+}
+
+#time,
+.time {
+  font-family: "JetBrainsMono NF", monospace;
+  font-size: 10em;
+  font-weight: bold;
+  color: black;
+  background-color: transparent;
+}

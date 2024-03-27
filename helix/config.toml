@@ -1,0 +1,15 @@
+theme="tfleet_dark"
+
+[editor]
+shell = ["fish", "-c"]
+line-number = "relative"
+idle-timeout = 0
+rulers = [80, 100, 120]
+
+[editor.lsp]
+auto-signature-help = false
+display-messages = true
+display-inlay-hints = true
+
+[editor.soft-wrap]
+enable = true

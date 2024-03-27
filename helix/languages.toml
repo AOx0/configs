@@ -1,0 +1,93 @@
+[[language]]
+name = "rust"
+language-servers = [ "rust-analyzer", "typos-lsp" ]
+# language-servers = [ "rust-analyzer", "tailwindcss-language-server", "typos-lsp" ]
+# language-servers = [ "rust-analyzer", "tailwindcss-language-server" ]
+# language-servers = [ "ra-multiplex", "tailwindcss-language-server" ]
+
+[[language]]
+name = "typst"
+language-servers = [ "typst-lsp", "ltex-es" ]
+
+[[language]]
+name = "markdown"
+language-servers = [ "marksman", "ltex-en" ]
+
+[language-server.ra-multiplex]
+command = "ra-multiplex"
+
+[language-server.ltex-es]
+command = "ltex-ls"
+
+[language-server.typos-lsp]
+command = "typos-lsp"
+
+[language-server.ltex-es.config.ltex]
+language = "es"
+
+[language-server.ltex-en]
+command = "ltex-ls"
+
+[language-server.ltex-en.config.ltex]
+language = "en"
+enabled = ["bibtex", "context", "context.tex", "html", "latex", "markdown", "org", "restructuredtext", "rsweave", "rust", "c"]
+
+[language-server.ltex-es.config.dictionary]
+"es" = [ "tablex", "quote", "attribution", "bibliography" ]
+
+# [language-server.ltex-en]
+# command = "ltex-ls"
+
+# [language-server.ltex-en.config.ltex]
+# language = "en"
+
+[language-server.rust-analyzer.config.check]
+command = "clippy"
+
+[language-server.ra-multiplex.config.check]
+command = "clippy"
+
+[[language]]
+name = "html"
+language-servers = [ "vscode-html-language-server", "tailwindcss-language-server" ]
+
+[[language]]
+name = "css"
+language-servers = [ "vscode-css-language-server", "tailwindcss-language-server" ]
+
+[[language]]
+name = "jsx"
+language-servers = [ "typescript-language-server", "tailwindcss-language-server" ]
+
+[[language]]
+name = "tsx"
+language-servers = [ "typescript-language-server", "tailwindcss-language-server" ]
+
+[[language]]
+name = "svelte"
+language-servers = [ "svelteserver", "tailwindcss-language-server" ]
+
+
+[language-server.tailwindcss-language-server]
+config = { userLanguages = { rust = "html", "*.rs" = "html" } }
+command = "tailwindcss-language-server"
+
+[[language]]
+name = "temple"
+scope = "source.temple"
+file-types = ["tpl", "temple"]
+indent = { tab-width = 1, unit = "    " }
+comment-token = "#"
+injection-regex = "t(em)?ple?"
+
+[language.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'$' = '$'
+'"' = '"'
+
+[[grammar]]
+name = "temple"
+source.git = "https://github.com/AOx0/temple/"
+source.rev = "tree-sitter"

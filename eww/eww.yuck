@@ -1,0 +1,28 @@
+(defwindow clock
+	:monitor 0
+	:stacking "bg"
+  :windowtype "normal"
+  :wm-ignore true
+	:geometry (geometry :x "0%"
+											:y "0%"
+											:width "10px"
+											:anchor "bottom right"
+											; :height "15%"
+											; :anchor "center"
+	)
+  (box 
+    :class "time" 
+    :orientation "vertical" 
+    :space-evenly false
+    :spacing -40
+      (time)
+      (date)
+  )
+  )
+
+(defpoll time :interval "1m" `date +'%H:%M'`)
+(defpoll date :interval "1h" `date +'%a:%b %D'`)
+
+(defwidget date [] (label :halign "center" :class "date" :text date))
+(defwidget time [] (label :halign "center" :class "time" :text time))
+  
