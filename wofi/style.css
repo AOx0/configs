@@ -1,8 +1,15 @@
 window {
-  opacity: 0.9;
+  /* opacity: 0.9; */
   border: 0px;
   font-family: 'JetBrains Mono NF', monospace;
   font-size: 15px;
+
+  all: unset;
+  background: rgba(30, 30, 46, 0.9);
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  border-radius: 0px;
 }
 
 #input {

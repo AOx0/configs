@@ -7,7 +7,7 @@ language-servers = [ "rust-analyzer", "typos-lsp" ]
 
 [[language]]
 name = "typst"
-language-servers = [ "typst-lsp", "ltex-es" ]
+language-servers = [ "typst-lsp", "ltex-en" ]
 
 [[language]]
 name = "markdown"
