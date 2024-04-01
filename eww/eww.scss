@@ -3,20 +3,32 @@
   /* Unsets everything so you can style everything from scratch */
 }
 
+$text_color: white;
+
+.date,
+#date,
+#time,
+.time,
+#batt,
+.batt {
+  font-family: "JetBrainsMono NF", monospace;
+  font-weight: bold;
+  color: $text_color;
+  background-color: transparent;
+}
+
+
 .date,
 #date {
-  font-family: "JetBrainsMono NF", monospace;
   font-size: 30pt;
-  font-weight: bold;
-  color: black;
-  background-color: transparent;
 }
 
 #time,
 .time {
-  font-family: "JetBrainsMono NF", monospace;
   font-size: 100pt;
-  font-weight: bold;
-  color: black;
-  background-color: transparent;
+}
+
+#batt,
+.batt {
+  font-size: 17pt;
 }

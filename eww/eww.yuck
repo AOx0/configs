@@ -6,7 +6,8 @@
 	:geometry (geometry :x "0%"
 											:y "0%"
 											:width "30%"
-											:anchor "bottom right"
+											; :anchor "bottom left"
+											:anchor "bottom left"
 											; :height "15%"
 											; :anchor "center"
 	)
@@ -20,9 +21,33 @@
   )
   )
 
+(defwindow status
+	:monitor 0
+	:stacking "bg"
+  :windowtype "normal"
+  :wm-ignore true
+	:geometry (geometry :x "1%"
+											:y "1%"
+											:width "1%"
+											; :anchor "bottom left"
+											:anchor "top left"
+											; :height "15%"
+											; :anchor "center"
+	)
+  (box 
+    :class "time" 
+    :orientation "vertical" 
+    :space-evenly false
+    ; :spacing -40
+      (batt)
+  )
+  )
+
+(defpoll batt :interval "1m" `aostats`)
 (defpoll time :interval "1m" `date +'%H:%M'`)
 (defpoll date :interval "1h" `date +'%a:%b %D'`)
 
+(defwidget batt [] (label :halign "center" :class "batt" :text batt))
 (defwidget date [] (label :halign "center" :class "date" :text date))
 (defwidget time [] (label :halign "center" :class "time" :text time))
   

@@ -1,16 +1,17 @@
 function toggle_gamemode
-    set HYPRGAMEMODE (hyprctl getoption animations:enabled | sed -n '2p' | awk '{print $2}')
-    if [ $HYPRGAMEMODE = true ]
+    set HYPRGAMEMODE (hyprctl getoption animations:enabled | sed -n '1p' | awk '{print $2}')
+    echo $HYPRGAMEMODE
+    if [ $HYPRGAMEMODE = 1 ]
         hyprctl --batch "\
-            keyword animations:enabled 0;\
-            keyword decoration:drop_shadow 0;\
-            keyword decoration:blur:enabled 0;\
+            keyword animations:enabled false;\
+            keyword decoration:drop_shadow false;\
+            keyword decoration:blur:enabled false;\
             keyword general:gaps_in 0;\
             keyword general:gaps_out 0;\
             keyword general:border_size 0;\
-            keyword decoration:rounding 0;\
-            keyword misc:no_direct_scanout 0;"\ 
-        exit
+            keyword decoration:rounding false;\
+            keyword misc:no_direct_scanout true;"\ 
+    else
+        hyprctl reload
     end
-    hyprctl reload
 end
