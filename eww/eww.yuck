@@ -3,9 +3,9 @@
 	:stacking "bg"
   :windowtype "normal"
   :wm-ignore true
-	:geometry (geometry :x "0%"
-											:y "0%"
-											:width "30%"
+	:geometry (geometry :x "3%"
+											:y "3%"
+											:width "1%"
 											; :anchor "bottom left"
 											:anchor "bottom left"
 											; :height "15%"
@@ -15,7 +15,7 @@
     :class "time" 
     :orientation "vertical" 
     :space-evenly false
-    :spacing -40
+    :spacing -20
       (time)
       (date)
   )
@@ -26,8 +26,8 @@
 	:stacking "bg"
   :windowtype "normal"
   :wm-ignore true
-	:geometry (geometry :x "1%"
-											:y "1%"
+	:geometry (geometry :x "3%"
+											:y "3%"
 											:width "1%"
 											; :anchor "bottom left"
 											:anchor "top left"
