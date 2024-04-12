@@ -6,6 +6,10 @@ language-servers = [ "rust-analyzer", "typos-lsp" ]
 # language-servers = [ "ra-multiplex", "tailwindcss-language-server" ]
 
 [[language]]
+name = "java"
+language-servers = [ "jdtls", "ltex-es" ]
+
+[[language]]
 name = "typst"
 language-servers = [ "typst-lsp", "ltex-en" ]
 
