@@ -1,3 +1,5 @@
+# use-grammars = { only = [ "temple" ] }
+
 [[language]]
 name = "rust"
 language-servers = [ "rust-analyzer", "typos-lsp" ]
@@ -7,11 +9,16 @@ language-servers = [ "rust-analyzer", "typos-lsp" ]
 
 [[language]]
 name = "java"
-language-servers = [ "jdtls", "ltex-es" ]
+language-servers = [ "jdtls", "typos-lsp" ]
+indent = { tab-width = 4, unit = "  " }
 
 [[language]]
 name = "typst"
-language-servers = [ "typst-lsp", "ltex-en" ]
+language-servers = [ "tinymist", "ltex-en" ]
+# language-servers = [ "typst-lsp", "ltex-en", "tinymist" ]
+
+[language-server.tinymist]
+command = "tinymist"
 
 [[language]]
 name = "markdown"
@@ -80,7 +87,7 @@ command = "tailwindcss-language-server"
 name = "temple"
 scope = "source.temple"
 file-types = ["tpl", "temple"]
-indent = { tab-width = 1, unit = "    " }
+indent = { tab-width = 4, unit = " " }
 comment-token = "#"
 injection-regex = "t(em)?ple?"
 
