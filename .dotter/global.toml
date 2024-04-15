@@ -2,7 +2,7 @@
 eww = { target = "~/.config/eww", type = "symbolic" }
 
 [funs.files]
-"funs/a.fish" = { target = "~/.config/fish/functions/a.fish", type = "symbolic" }
+"funs/b.fish" = { target = "~/.config/fish/functions/b.fish", type = "symbolic" }
 "funs/toggle_gamemode.fish" = { target = "~/.config/fish/functions/toggle_gamemode.fish", type = "symbolic" }
 "funs/connect.fish" = { target = "~/.config/fish/functions/connect.fish", type = "symbolic" }
 "funs/init_br.fish" = { target = "~/.config/fish/functions/init_br.fish", type = "symbolic" }
