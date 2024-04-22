@@ -14,7 +14,7 @@ indent = { tab-width = 4, unit = "  " }
 
 [[language]]
 name = "typst"
-language-servers = [ "tinymist", "ltex-en" ]
+language-servers = [ "tinymist", "ltex-es" ]
 # language-servers = [ "typst-lsp", "ltex-en", "tinymist" ]
 
 [language-server.tinymist]
