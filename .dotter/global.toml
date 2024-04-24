@@ -1,6 +1,12 @@
 [eww.files]
 eww = { target = "~/.config/eww", type = "symbolic" }
 
+[sioyek.files]
+sioyek = { target = "~/.config/sioyek", type = "symbolic" }
+
+[cargo.files]
+"cargo/config.toml" = { target = "~/.cargo/config.toml", type = "symbolic" }
+
 [funs.files]
 "funs/b.fish" = { target = "~/.config/fish/functions/b.fish", type = "symbolic" }
 "funs/toggle_gamemode.fish" = { target = "~/.config/fish/functions/toggle_gamemode.fish", type = "symbolic" }
