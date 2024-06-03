@@ -14,15 +14,35 @@ indent = { tab-width = 4, unit = "  " }
 
 [[language]]
 name = "typst"
-language-servers = [ "tinymist", "ltex-es" ]
+# language-servers = [ "test-lsp" ]
+# language-servers = [ "tinymist" ]
+language-servers = [ "tinymist", "ltex-en", "typos-lsp" ]
 # language-servers = [ "typst-lsp", "ltex-en", "tinymist" ]
+
+[[language]]
+name = "python"
+language-servers = [ "pylsp", "typos-lsp" ]
+
+# [language-server.python-lsp.config.pylsp]
+# plugins.pyls_mypy.enabled = true
+# plugins.pyls_mypy.live_mode = true
+
+# [language-server.python-lsp]
+# command = "python-lsp"
 
 [language-server.tinymist]
 command = "tinymist"
 
+[language-server.test-lsp]
+command = "test-lsp"
+
 [[language]]
 name = "markdown"
-language-servers = [ "marksman", "ltex-en" ]
+language-servers = [ "marksman", "ltex-en", "typos-lsp" ]
+
+[[language]]
+name = "git-commit"
+language-servers = [ "typos-lsp" ]
 
 [language-server.ra-multiplex]
 command = "ra-multiplex"
@@ -35,16 +55,17 @@ command = "typos-lsp"
 
 [language-server.ltex-es.config.ltex]
 language = "es"
+# enabled = ["bibtex", "context", "context.tex", "html", "latex", "markdown", "org", "restructuredtext", "rsweave", "rust", "c", "binding", "bindings", "embedding", "embeddings", "tfidf", "TFIDF", "N-Grams", "N-Gramas"]
 
 [language-server.ltex-en]
 command = "ltex-ls"
 
 [language-server.ltex-en.config.ltex]
 language = "en"
-enabled = ["bibtex", "context", "context.tex", "html", "latex", "markdown", "org", "restructuredtext", "rsweave", "rust", "c"]
+enabled = ["bibtex", "context", "context.tex", "html", "latex", "markdown", "org", "restructuredtext", "rsweave", "rust", "c", "typst"]
 
 [language-server.ltex-es.config.dictionary]
-"es" = [ "tablex", "quote", "attribution", "bibliography" ]
+"es" = [ "tablex", "quote", "attribution", "bibliography", "binding", "bindings", "embedding", "embeddings", "tfidf", "TFIDF", "N-Grams", "N-Gramas", "hidden", "citations" ]
 
 # [language-server.ltex-en]
 # command = "ltex-ls"

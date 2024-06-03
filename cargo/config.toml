@@ -1,9 +1,11 @@
 [target.aarch64-apple-ios]
 ar = "/home/ae/theos/toolchain/linux/iphone/bin/ar"
 linker = "/home/ae/theos/toolchain/linux/iphone/bin/ld"
+# ar = "aarch64-apple-darwin-ar"
+# linker = "aarch64-apple-darwin-ld"
 
 [build]
 # rustflags = ["-Clink-arg=-fuse-ld=mold", "-Zthreads=8", "-Ctarget-cpu=native"]
 # rustflags = ["-Clink-arg=-fuse-ld=mold", "-Zthreads=8"]
 # rustflags = ["-Clink-arg=-fuse-ld=mold"]
-# rustflags = ["-Zthreads=8"]
+rustflags = ["-Zthreads=8"]
