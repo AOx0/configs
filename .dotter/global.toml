@@ -1,3 +1,6 @@
+[kanata.files]
+kanata = { target = "~/.config/kanata", type = "symbolic" }
+
 [eww.files]
 eww = { target = "~/.config/eww", type = "symbolic" }
 

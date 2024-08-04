@@ -1,0 +1,12 @@
+(defsrc 
+  caps ;
+)
+
+;; Alias
+(defalias
+  metacaps (tap-hold 1000 1000 esc lmeta)
+)
+
+(deflayer base
+  lmeta esc 
+)

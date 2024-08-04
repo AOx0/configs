@@ -14,7 +14,7 @@ cursor-line = "warning"
 other-lines = "error"
 
 [editor.lsp]
-# auto-signature-help = false
+auto-signature-help = true
 display-messages = true
 display-inlay-hints = true
 

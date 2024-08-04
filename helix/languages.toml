@@ -1,8 +1,41 @@
 # use-grammars = { only = [ "temple" ] }
 
+[language-server.fish-lsp]
+command = "node"
+args = ["/home/ae/repos/fish-lsp/out/cli.js", "start"]
+
+# [language-server.fish-lsp]
+# command = "fish-lsp"
+# args = ["start"]
+
+[[language]]
+name = "fish"
+auto-format = false
+language-servers = [ "fish-lsp" ]
+
+# [[language]]
+# name = "rust-script"
+# language-servers = ["rscls"]
+# scope = "source.rss"
+# file-types = ["rss"]
+# grammar = "rust"
+
+[language-server.rscls]
+command = "rscls"
+
+[language-server.rscls.config.check]
+command = "clippy"
+
 [[language]]
 name = "rust"
-language-servers = [ "rust-analyzer", "typos-lsp" ]
+language-servers = ["rust-analyzer"]
+
+[language-server.tailwindcss-ls]
+config = { userLanguages = { rust = "html", "*.rs" = "html" } }
+
+# [[language]]
+# name = "rust"
+# language-servers = [ "rust-analyzer", "tailwindcss", "typos-lsp" ]
 # language-servers = [ "rust-analyzer", "tailwindcss-language-server", "typos-lsp" ]
 # language-servers = [ "rust-analyzer", "tailwindcss-language-server" ]
 # language-servers = [ "ra-multiplex", "tailwindcss-language-server" ]
@@ -11,6 +44,15 @@ language-servers = [ "rust-analyzer", "typos-lsp" ]
 name = "java"
 language-servers = [ "jdtls", "typos-lsp" ]
 indent = { tab-width = 4, unit = "  " }
+
+[[language]]
+name = "c-sharp"
+language-servers = [ "omni",  "typos-lsp" ]
+indent = { tab-width = 4, unit = "  " }
+
+[language-server.omni]
+command = "csharp-ls"
+# args = ["--languageserver"]
 
 [[language]]
 name = "typst"
@@ -79,30 +121,26 @@ command = "clippy"
 [language-server.ra-multiplex.config.check]
 command = "clippy"
 
+
 [[language]]
 name = "html"
-language-servers = [ "vscode-html-language-server", "tailwindcss-language-server" ]
+language-servers = [ "vscode-html-language-server", "tailwindcss-ls" ]
 
 [[language]]
 name = "css"
-language-servers = [ "vscode-css-language-server", "tailwindcss-language-server" ]
+language-servers = [ "vscode-css-language-server", "tailwindcss-ls" ]
 
 [[language]]
 name = "jsx"
-language-servers = [ "typescript-language-server", "tailwindcss-language-server" ]
+language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
 
 [[language]]
 name = "tsx"
-language-servers = [ "typescript-language-server", "tailwindcss-language-server" ]
+language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
 
 [[language]]
 name = "svelte"
-language-servers = [ "svelteserver", "tailwindcss-language-server" ]
-
-
-[language-server.tailwindcss-language-server]
-config = { userLanguages = { rust = "html", "*.rs" = "html" } }
-command = "tailwindcss-language-server"
+language-servers = [ "svelteserver", "tailwindcss-ls" ]
 
 [[language]]
 name = "temple"
