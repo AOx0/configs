@@ -1,3 +1,6 @@
+[zed.files]
+zed = { target = "~/.config/zed", type = "symbolic" }
+
 [kanata.files]
 kanata = { target = "~/.config/kanata", type = "symbolic" }
 

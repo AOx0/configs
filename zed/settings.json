@@ -1,0 +1,82 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `zed: Open Default Settings` command
+// from the command palette
+//{
+//  "assistant": {
+//    "default_open_ai_model": "gpt-3.5-turbo",
+//    "provider": {
+//      "name": "openai",
+//      "default_model": "gpt-3.5-turbo",
+//      "available_models": []
+//    }
+//  },
+//  "ui_font_size": 16,
+//  "buffer_font_size": 16,
+//  "theme": {
+//    "mode": "system",
+//    "light": "One Light",
+//    "dark": "One Dark"
+//  }
+//}
+{
+  "telemetry": {
+    "metrics": true
+  },
+  // "helix_mode": true,
+  "theme": "Fleet Dark",
+  "vim_mode": true,
+  "ui_font_size": 13,
+  "buffer_font_size": 13,
+  "wrap_guides": [80, 100, 120],
+  "vim": {
+    // "always": use system clipboard
+    // "never": don't use system clipboard
+    // "on_yank": use system clipboard for yank operations
+    "use_system_clipboard": "always",
+    // Lets `f` and `t` motions extend across multiple lines
+    "use_multiline_find": true,
+    "use_smartcase_find": true
+  },
+  "relative_line_numbers": true,
+  "scrollbar": {
+    "show": "auto"
+  },
+  // allow cursor to reach edges of screen
+  "vertical_scroll_margin": 10,
+  "inlay_hints": {
+    "enabled": true
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+  "languages": {
+    "Rust": {
+      "show_inline_completions": true
+    },
+    "HTML": {
+      "tab_size": 2
+    },
+    "CSS": {
+      "tab_size": 2
+    },
+    "JSON": {
+      "tab_size": 2
+    }
+  }
+  // "lsp": {
+  //   "rust-analyzer": {
+  //     "initialization_options": {
+  //       "checkOnSave": {
+  //         "command": "clippy" // rust-analyzer.checkOnSave.command
+  //       }
+  //     }
+  //   }
+  // }
+}
