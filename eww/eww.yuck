@@ -43,8 +43,8 @@
   )
   )
 
-(defpoll batt :interval "1m" `aostats`)
-(defpoll time :interval "1m" `date +'%H:%M'`)
+(defpoll batt :interval "30s" `fastfetch --pipe --logo none --thread --colors-block-range-start 0 --colors-block-range-end 0 --colors-block-width 0 --color-output 0 --colors-symbol block | sed 's/.Ice Lake. //g' | grep -v 'Terminal|Shell'`)
+(defpoll time :interval "30s" `date +'%H:%M'`)
 (defpoll date :interval "1h" `date +'%a:%b %D'`)
 
 (defwidget batt [] (label :halign "center" :class "batt" :text batt))

@@ -1,12 +1,12 @@
-(defsrc 
-  caps ;
-)
+(defsrc caps ; )
+
+;; (defsrc caps ; rctrl +)
 
 ;; Alias
 (defalias
   metacaps (tap-hold 1000 1000 esc lmeta)
 )
 
-(deflayer base
-  lmeta esc 
-)
+;; (deflayer base i esc S-q S-q)
+
+(deflayer base lmeta ;)
