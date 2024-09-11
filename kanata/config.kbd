@@ -3,9 +3,9 @@
 ;; (defsrc caps ; rctrl +)
 
 ;; Alias
-(defalias
-  metacaps (tap-hold 1000 1000 esc lmeta)
-)
+;; (defalias
+;;   metacaps (tap-hold 1000 1000 esc lmeta)
+;; )
 
 ;; (deflayer base i esc S-q S-q)
 
