@@ -73,6 +73,8 @@
       "%": "editor::SelectAll",
       "x": "editor::SelectLine",
       "y": "editor::Copy",
+      // ">": "editor::Tab",
+      "<": "editor::TabPrev",
       // Mine
       "ctrl-c": ["editor::ToggleComments", { "advance_downwards": false }],
       "shift-c": "editor::AddSelectionBelow"

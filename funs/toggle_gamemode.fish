@@ -9,8 +9,7 @@ function toggle_gamemode
             keyword general:gaps_in 0;\
             keyword general:gaps_out 0;\
             keyword general:border_size 0;\
-            keyword decoration:rounding false;\
-            keyword misc:no_direct_scanout true;"\ 
+            keyword decoration:rounding false;"
     else
         hyprctl reload
     end
