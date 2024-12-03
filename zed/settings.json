@@ -5,7 +5,7 @@
 //
 {
   "tab_bar": {
-    "show": false,
+    // "show": false,
     "show_nav_history_buttons": true
   },
   "ssh_connections": [
@@ -17,12 +17,21 @@
           "paths": ["~/NetBeansProjects/socket"]
         }
       ]
+    },
+    {
+      "host": "172.29.49.204",
+      "username": "melanyjocelyn",
+      "projects": [
+        {
+          "paths": ["~/aduana_facil_movil"]
+        }
+      ]
     }
   ],
   "assistant": {
     "default_model": {
-      "provider": "openai",
-      "model": "gpt-4o"
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
     },
     "version": "2"
   },
@@ -31,12 +40,13 @@
     "metrics": true
   },
   "theme": "Fleet Dark",
-  // "helix_mode": true,
+  "helix_mode": true,
   "vim_mode": true,
   "ui_font_size": 15,
   "buffer_font_size": 15,
   "wrap_guides": [80, 100, 120],
   "vim": {
+    "mode": "helix",
     // "always": use system clipboard
     // "never": don't use system clipboard
     // "on_yank": use system clipboard for yank operations
@@ -61,7 +71,7 @@
   },
   "languages": {
     "Python": {
-      "show_inline_completions": false
+      "show_inline_completions": true
     },
     "Typst": {
       "show_inline_completions": false
@@ -81,7 +91,9 @@
   },
   "jupyter": {
     "kernel_selections": {
-      "python": "ml"
+      // "python": "pwn"
+      // "python": "gcloud-eda"
+      "python": "ml-proyecto"
       // "python": "dipe"
       // "typescript": "deno",
       // "javascript": "deno",
@@ -95,6 +107,42 @@
           "command": "clippy" // rust-analyzer.checkOnSave.command
         }
       }
+    },
+    "ruff": {
+      "initialization_options": {
+        "settings": {
+          "lineLength": 120,
+          "showSyntaxErrors": true,
+          "lint": {
+            "select": ["ALL"],
+            "ignore": ["D", "S101", "E501", "T201"]
+          }
+        }
+      }
+    },
+    "ltex": {
+      "settings": {
+        "ltex": {
+          "language": "es"
+        }
+      }
     }
+  },
+
+  "Python": {
+    "language_servers": ["ruff", "pyright"],
+    "formatter": [
+      {
+        "code_actions": {
+          "source.organizeImports.ruff": true,
+          "source.fixAll.ruff": true
+        }
+      },
+      {
+        "language_server": {
+          "name": "ruff"
+        }
+      }
+    ]
   }
 }

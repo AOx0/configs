@@ -26,6 +26,9 @@ sioyek = { target = "~/.config/sioyek", type = "symbolic" }
 "funs/fpath.fish" = { target = "~/.config/fish/functions/fpath.fish", type = "symbolic" }
 "funs/sinit.fish" = { target = "~/.config/fish/functions/sinit.fish", type = "symbolic" }
 "funs/dinit.fish" = { target = "~/.config/fish/functions/dinit.fish", type = "symbolic" }
+"funs/start.fish" = { target = "~/.config/fish/functions/start.fish", type = "symbolic" }
+"funs/stop.fish" = { target = "~/.config/fish/functions/stop.fish", type = "symbolic" }
+"funs/restart.fish" = { target = "~/.config/fish/functions/restart.fish", type = "symbolic" }
 
 [hypr.files]
 hypr = { target = "~/.config/hypr", type = "symbolic" }
