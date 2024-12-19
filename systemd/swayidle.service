@@ -1,0 +1,14 @@
+[Unit]
+Description=Idle management daemon for Hyprland
+Documentation=man:swayidle(1)
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/swayidle -w \
+    timeout 120 'hyprctl dispatch dpms off' \
+    resume 'hyprctl dispatch dpms on'
+RestartSec=5
+Restart=always
+
+[Install]
+WantedBy=default.target

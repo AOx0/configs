@@ -8,4 +8,4 @@ linker = "/home/ae/theos/toolchain/linux/iphone/bin/ld"
 # rustflags = ["-Clink-arg=-fuse-ld=mold", "-Zthreads=8", "-Ctarget-cpu=native"]
 # rustflags = ["-Clink-arg=-fuse-ld=mold", "-Zthreads=16", "-Ctarget-cpu=native"]
 # rustflags = ["-Clink-arg=-fuse-ld=mold"]
-rustflags = ["-Zthreads=16"]
+# rustflags = ["-Zthreads=16"]

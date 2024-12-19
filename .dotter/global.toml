@@ -30,6 +30,10 @@ sioyek = { target = "~/.config/sioyek", type = "symbolic" }
 "funs/stop.fish" = { target = "~/.config/fish/functions/stop.fish", type = "symbolic" }
 "funs/restart.fish" = { target = "~/.config/fish/functions/restart.fish", type = "symbolic" }
 
+[systemd.files]
+"systemd/kanata.service" = { target = "~/.config/systemd/user/kanata.service", type = "symbolic" }
+"systemd/swayidle.service" = { target = "~/.config/systemd/user/swayidle.service", type = "symbolic" }
+
 [hypr.files]
 hypr = { target = "~/.config/hypr", type = "symbolic" }
 
