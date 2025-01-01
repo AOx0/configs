@@ -166,6 +166,21 @@ injection-regex = "t(em)?ple?"
 '$' = '$'
 '"' = '"'
 
+
+[[language]]
+name = "kanata"
+comment-token = ";;"
+scope = ""
+file-types = ["kbd"]
+roots = []
+
+[language.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'$' = '$'
+'"' = '"'
+
 [[grammar]]
 name = "temple"
 source.git = "https://github.com/AOx0/temple/"

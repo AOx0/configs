@@ -4,12 +4,13 @@ function toggle_gamemode
     if [ $HYPRGAMEMODE = 1 ]
         hyprctl --batch "\
             keyword animations:enabled false;\
-            keyword decoration:drop_shadow false;\
+            keyword decoration:shadow:enabled false;\
             keyword decoration:blur:enabled false;\
             keyword general:gaps_in 0;\
             keyword general:gaps_out 0;\
             keyword general:border_size 0;\
-            keyword decoration:rounding false;"
+            keyword decoration:rounding false;\
+            keyword misc:vfr true;"
     else
         hyprctl reload
     end

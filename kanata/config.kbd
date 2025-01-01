@@ -1,12 +1,21 @@
+;; State of Decay
+;; (defsrc caps ; lctrl c)
+;; (deflayer base i ; c lctrl)
+
+;; CSGO
+;; (defsrc lctrl mrgt)
+;; (deflayer base mrgt lctrl)
+
+;; Normal
 (defsrc caps ; )
+(deflayer base lmeta ;)
 
+
+
+;; Huh
 ;; (defsrc caps ; rctrl +)
-
 ;; Alias
 ;; (defalias
 ;;   metacaps (tap-hold 1000 1000 esc lmeta)
 ;; )
-
 ;; (deflayer base i esc S-q S-q)
-
-(deflayer base lmeta ;)
