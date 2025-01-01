@@ -28,7 +28,7 @@
   :wm-ignore true
 	:geometry (geometry :x "3%"
 											:y "3%"
-											:width "40%"
+											:width "54%"
 											; :anchor "bottom left"
 											:anchor "top left"
 											; :height "15%"
@@ -43,7 +43,7 @@
   )
   )
 
-(defpoll batt :interval "30s" `aostats`)
+(defpoll batt :interval "5s" `fastfetch --logo none --color white | rg -v '  '`)
 ; (defpoll batt :interval "30s" `fastfetch --pipe --logo none --thread --colors-block-range-start 0 --colors-block-range-end 0 --colors-block-width 0 --color-output 0 --colors-symbol block | sed 's/.Ice Lake. //g' | grep -v 'Terminal|Shell'`)
 (defpoll time :interval "30s" `date +'%H:%M'`)
 (defpoll date :interval "1h" `date +'%a:%b %D'`)

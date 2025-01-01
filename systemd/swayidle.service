@@ -5,9 +5,9 @@ Documentation=man:swayidle(1)
 [Service]
 Type=simple
 ExecStart=/usr/bin/swayidle -w \
-    timeout 60 'hyprctl dispatch dpms off' \
-    resume 'hyprctl dispatch dpms on' \
-    timeout 600 'systemctl suspend'
+    timeout 60 'hyprctl dispatch dpms off eDP-1' \
+    resume 'hyprctl dispatch dpms on eDP-1' \
+    timeout 1800 'systemctl suspend'
 RestartSec=5
 Restart=always
 
