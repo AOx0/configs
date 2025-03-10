@@ -1,0 +1,12 @@
+[Unit]
+Description=Low Battery remainder
+
+[Service]
+Type=simple
+Environment="RUST_LOG=debug"
+ExecStart=/home/ae/.cargo/bin/battery_notifier
+RestartSec=0
+Restart=always
+
+[Install]
+WantedBy=default.target

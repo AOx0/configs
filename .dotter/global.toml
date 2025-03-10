@@ -33,6 +33,7 @@ sioyek = { target = "~/.config/sioyek", type = "symbolic" }
 [systemd.files]
 "systemd/kanata.service" = { target = "~/.config/systemd/user/kanata.service", type = "symbolic" }
 "systemd/swayidle.service" = { target = "~/.config/systemd/user/swayidle.service", type = "symbolic" }
+"systemd/battery_notifier.service" = { target = "~/.config/systemd/user/battery_notifier.service", type = "symbolic" }
 
 [hypr.files]
 hypr = { target = "~/.config/hypr", type = "symbolic" }
