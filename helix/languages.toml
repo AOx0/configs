@@ -33,8 +33,10 @@ language-servers = ["rust-analyzer"]
 [language-server.tailwindcss-ls]
 config = { userLanguages = { rust = "html", "*.rs" = "html" } }
 
-# [[language]]
-# name = "rust"
+[[language]]
+name = "rust"
+language-servers = [ "rust-analyzer" ]
+# language-servers = [ "rust-analyzer", "typos-lsp" ]
 # language-servers = [ "rust-analyzer", "tailwindcss", "typos-lsp" ]
 # language-servers = [ "rust-analyzer", "tailwindcss-language-server", "typos-lsp" ]
 # language-servers = [ "rust-analyzer", "tailwindcss-language-server" ]
@@ -181,7 +183,7 @@ roots = []
 '$' = '$'
 '"' = '"'
 
-[[grammar]]
-name = "temple"
-source.git = "https://github.com/AOx0/temple/"
-source.rev = "tree-sitter"
+# [[grammar]]
+# name = "temple"
+# source.git = "https://github.com/AOx0/temple/"
+# source.rev = "tree-sitter"

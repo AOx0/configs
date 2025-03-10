@@ -3,8 +3,14 @@
 ;; (deflayer base i ; c lctrl)
 
 ;; CSGO
-;; (defsrc lctrl mrgt)
-;; (deflayer base mrgt lctrl)
+;; (defsrc mrgt lctrl)
+;; (deflayer base lctrl mrgt)
+;; (defsrc mrgt)
+;; (deflayer base lctrl)
+
+;; Fatal Frame
+;; (defsrc            caps    mrgt   mlft     mmid)
+;; (deflayer   base   lmeta   lalt   lshift   c   )
 
 ;; Normal
 (defsrc caps ; )
